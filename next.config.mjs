@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Required for GitHub Pages
-  basePath: '/radhakrishna_optical', // Replace with your exact repo name
+  output: 'export',
+  basePath: '/radhakrishna_Optical',     // exact repo name, case-sensitive
+  assetPrefix: '/radhakrishna_Optical/', // trailing slash is important
   images: {
-    unoptimized: true, // Needed for static hosting
+    unoptimized: true,
   },
+  trailingSlash: true,                   // prevents many refresh 404s
 };
 
 export default nextConfig;
