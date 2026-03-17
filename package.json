@@ -1,0 +1,5 @@
+"scripts": {
+  ... your existing ones ...
+  "export": "next build && next export",
+  "deploy": "gh-pages -d out"
+}
